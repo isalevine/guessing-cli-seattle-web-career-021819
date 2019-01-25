@@ -6,9 +6,7 @@ def run_guessing_game
   while user_input != "exit"
     user_input = gets.chomp
     random_number = rand(1..6)
-    binding.pry
     if user_input == random_number
-      binding.pry
       puts "You guessed the correct number!"
       break
     else
